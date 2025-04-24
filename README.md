@@ -10,10 +10,12 @@ otherwise it will sendNACK signal to client.
 6. Stop the program
 
 PROGRAM:
+```
 from scapy.all import*
 target = ["www.google.com"]
 result, unans = traceroute(target,maxttl=32)
 print(result,unans)
+```
 
 Output:
 ![4b](https://github.com/user-attachments/assets/34332855-1089-4ba0-86f4-5a0d7ec0c2ae)
